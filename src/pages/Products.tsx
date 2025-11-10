@@ -2,6 +2,7 @@ import ProductCard from "@/components/ProductCard";
 import productsData from "@/content/products.json";
 import LifecycleSupport from "@/components/LifecycleSupport";
 import ContactTeaser from "@/components/ContactTeaser";
+import ProductIntro from "@/components/ProductIntro";
 
 const Products = () => {
   return (
@@ -14,6 +15,8 @@ const Products = () => {
           </p>
         </div>
       </section>
+
+      <ProductIntro />
 
       <section className="py-16 md:py-24">
         <div className="container mx-auto px-4 md:px-6">
