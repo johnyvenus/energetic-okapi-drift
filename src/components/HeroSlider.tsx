@@ -69,12 +69,7 @@ const HeroSlider = () => {
                         <Button
                           key={btnIndex}
                           size="lg"
-                          variant={button.variant === 'outline' ? 'outline' : 'default'}
-                          className={
-                            button.variant === 'outline'
-                              ? 'text-white border-white hover:bg-white hover:text-foreground'
-                              : ''
-                          }
+                          variant={button.variant === 'outline' ? 'outline-inverse' : 'default'}
                           asChild
                         >
                           {button.link.startsWith('/') ? (
