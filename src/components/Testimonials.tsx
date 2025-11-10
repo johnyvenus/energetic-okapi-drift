@@ -3,7 +3,7 @@ import { Quote } from "lucide-react";
 
 const testimonials = [
   {
-    quote: "The precision and reliability of MachineCo's equipment have transformed our production line. Their support team is second to none.",
+    quote: "The precision and reliability of AVI Enterprises' equipment have transformed our production line. Their support team is second to none.",
     name: "Arjun Kapoor",
     company: "CEO, Bharat Forge Ltd.",
   },

@@ -29,7 +29,7 @@ const About = () => {
       {/* Hero Section */}
       <section className="bg-secondary py-20">
         <div className="container mx-auto px-4 md:px-6 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold text-foreground">About MachineCo</h1>
+          <h1 className="text-4xl md:text-5xl font-bold text-foreground">About AVI Enterprises</h1>
           <p className="mt-4 text-lg max-w-3xl mx-auto text-muted-foreground">
             Pioneering industrial manufacturing in India with a commitment to quality, innovation, and customer success for over 25 years.
           </p>
@@ -43,14 +43,14 @@ const About = () => {
             <div>
               <h2 className="text-3xl font-bold mb-4">Our Story</h2>
               <p className="text-muted-foreground mb-4">
-                Founded in 1998, MachineCo started as a small workshop with a big vision: to build world-class industrial machinery in India. Through relentless dedication to engineering excellence and a customer-first approach, we have grown into a leading manufacturer, trusted by thousands of businesses across the country and beyond.
+                Founded in 1998, AVI Enterprises started as a small workshop with a big vision: to build world-class industrial machinery in India. Through relentless dedication to engineering excellence and a customer-first approach, we have grown into a leading manufacturer, trusted by thousands of businesses across the country and beyond.
               </p>
               <p className="text-muted-foreground">
                 Our journey is one of continuous innovation. We invest heavily in research and development to stay at the forefront of technology, ensuring our machines deliver unparalleled performance, reliability, and value.
               </p>
             </div>
             <div>
-              <img src="/placeholder.svg" alt="MachineCo founders" className="rounded-lg shadow-lg w-full" />
+              <img src="/placeholder.svg" alt="AVI Enterprises founders" className="rounded-lg shadow-lg w-full" />
             </div>
           </div>
         </div>

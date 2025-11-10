@@ -32,7 +32,7 @@ const WhyUs = () => {
             />
           </div>
           <div>
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">Why Choose MachineCo?</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">Why Choose AVI Enterprises?</h2>
             <p className="text-lg text-muted-foreground mb-8">
               With decades of experience, we are committed to providing our clients with machinery that drives growth and innovation.
             </p>

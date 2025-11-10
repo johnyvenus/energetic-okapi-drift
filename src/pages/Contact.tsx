@@ -29,21 +29,21 @@ const Contact = () => {
                   <MapPin className="h-6 w-6 text-primary mt-1" />
                   <div>
                     <h3 className="font-semibold">Our Address</h3>
-                    <p className="text-muted-foreground">123 Industrial Way, Mumbai, India 400001</p>
+                    <p className="text-muted-foreground">Kila No. 17/1, Rakba 2, Main Sohna Road, Radha Soami Satsang Mor, Faridabad, Haryana 121004</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
                   <Phone className="h-6 w-6 text-primary mt-1" />
                   <div>
                     <h3 className="font-semibold">Phone</h3>
-                    <p className="text-muted-foreground">+91 12345 67890</p>
+                    <p className="text-muted-foreground">+91-9718335075</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
                   <Mail className="h-6 w-6 text-primary mt-1" />
                   <div>
                     <h3 className="font-semibold">Email</h3>
-                    <p className="text-muted-foreground">sales@machineco.com</p>
+                    <p className="text-muted-foreground">rohit@avifbd.com</p>
                   </div>
                 </div>
               </div>
@@ -61,12 +61,12 @@ const Contact = () => {
             <div className="rounded-lg overflow-hidden shadow-lg border">
               <iframe
                 className="w-full aspect-video"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d482634.8182245297!2d72.60097982479801!3d19.08252232528863!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c6306644edc1%3A0x5da4ed8f8d648c69!2sMumbai%2C%20Maharashtra%2C%20India!5e0!3m2!1sen!2sus!4v1678886543210!5m2!1sen!2sus"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d112482.5533237155!2d77.23215364335937!3d28.392861900000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cde85f65b567b%3A0x691274916a40c915!2sFaridabad%2C%20Haryana%2C%20India!5e0!3m2!1sen!2sus!4v1678886543210!5m2!1sen!2sus"
                 style={{ border: 0 }}
                 allowFullScreen={true}
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Google Map of MachineCo location in Mumbai"
+                title="Google Map of AVI Enterprises location in Faridabad"
               ></iframe>
             </div>
           </div>

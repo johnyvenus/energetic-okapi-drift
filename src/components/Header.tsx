@@ -27,7 +27,7 @@ const Header = () => {
       <div className="container mx-auto flex items-center justify-between h-16 px-4 md:px-6">
         <NavLink to="/" className="flex items-center gap-2">
           <img src="/placeholder.svg" alt="Company Logo" className="h-8 w-8" />
-          <span className="font-bold text-xl text-primary">MachineCo</span>
+          <span className="font-bold text-xl text-primary">AVI Enterprises</span>
         </NavLink>
 
         {/* Desktop Navigation */}
@@ -57,7 +57,7 @@ const Header = () => {
               <div className="flex flex-col gap-6 p-6">
                 <NavLink to="/" className="flex items-center gap-2 mb-4" onClick={() => setIsMobileMenuOpen(false)}>
                   <img src="/placeholder.svg" alt="Company Logo" className="h-8 w-8" />
-                  <span className="font-bold text-xl text-primary">MachineCo</span>
+                  <span className="font-bold text-xl text-primary">AVI Enterprises</span>
                 </NavLink>
                 <nav className="flex flex-col gap-4">
                   {navLinks.map((link) => (

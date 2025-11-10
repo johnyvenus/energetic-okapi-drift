@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="container mx-auto py-12 px-4 md:px-6">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
-            <h3 className="font-bold text-lg mb-4 text-foreground">MachineCo</h3>
+            <h3 className="font-bold text-lg mb-4 text-foreground">AVI Enterprises</h3>
             <p className="text-sm">
               Manufacturing excellence in every machine.
             </p>
@@ -23,10 +23,12 @@ const Footer = () => {
           <div>
             <h3 className="font-semibold mb-4 text-foreground">Contact Us</h3>
             <ul className="space-y-2 text-sm">
-              <li>123 Industrial Way,</li>
-              <li>Mumbai, India 400001</li>
-              <li>Phone: +91 12345 67890</li>
-              <li>Email: sales@machineco.com</li>
+              <li>Kila No. 17/1, Rakba 2,</li>
+              <li>Main Sohna Road,</li>
+              <li>Radha Soami Satsang Mor,</li>
+              <li>Faridabad, Haryana 121004</li>
+              <li>Phone: +91-9718335075</li>
+              <li>Email: rohit@avifbd.com</li>
             </ul>
           </div>
           <div>
@@ -38,7 +40,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="mt-8 border-t pt-6 text-center text-sm">
-          <p>&copy; {new Date().getFullYear()} MachineCo. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} AVI Enterprises. All rights reserved.</p>
           <MadeWithDyad />
         </div>
       </div>
