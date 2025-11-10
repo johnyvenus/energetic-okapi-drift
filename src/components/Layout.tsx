@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "./Header";
 import Footer from "./Footer";
+import WhatsAppButton from "./WhatsAppButton";
 
 const Layout = ({ children }: { children: React.ReactNode }) => {
   return (
@@ -8,6 +9,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
       <Header />
       <main className="flex-grow">{children}</main>
       <Footer />
+      <WhatsAppButton />
     </div>
   );
 };
