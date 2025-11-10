@@ -5,9 +5,27 @@
     "slug": "lc-3015-fiber-laser",
     "category": "laser-cutting",
     "image": "/placeholder.svg",
-    "description": "High-speed fiber laser cutting for sheet metal up to 20mm.",
-    "powerRange": "1kW - 6kW",
-    "cuttingArea": "3000mm x 1500mm"
+    "description": "High-speed fiber laser cutting for sheet metal up to 20mm. Available in multiple configurations to match your production needs.",
+    "models": [
+      {
+        "name": "Standard",
+        "specs": {
+          "Power Range": "1kW - 3kW",
+          "Working Area": "3000mm x 1500mm",
+          "Max Positioning Speed": "100m/min",
+          "Positioning Accuracy": "±0.03mm"
+        }
+      },
+      {
+        "name": "Pro",
+        "specs": {
+          "Power Range": "4kW - 6kW",
+          "Working Area": "3000mm x 1500mm",
+          "Max Positioning Speed": "140m/min",
+          "Positioning Accuracy": "±0.02mm"
+        }
+      }
+    ]
   },
   {
     "id": "pb-10032",
@@ -15,9 +33,27 @@
     "slug": "pb-10032-cnc-press-brake",
     "category": "cnc-press-brakes",
     "image": "/placeholder.svg",
-    "description": "100-ton press brake with a 3200mm bending length.",
-    "powerRange": "100 Ton",
-    "cuttingArea": "3200mm"
+    "description": "100-ton press brake with a 3200mm bending length, equipped with advanced CNC controls for precision forming.",
+    "models": [
+      {
+        "name": "Model S",
+        "specs": {
+          "Tonnage": "100 Ton",
+          "Bending Length": "3200mm",
+          "Axis Control": "3+1 Axis",
+          "Controller": "DELEM DA-53T"
+        }
+      },
+      {
+        "name": "Model X",
+        "specs": {
+          "Tonnage": "100 Ton",
+          "Bending Length": "3200mm",
+          "Axis Control": "4+1 Axis",
+          "Controller": "DELEM DA-66T"
+        }
+      }
+    ]
   },
   {
     "id": "sm-0632",
@@ -26,8 +62,11 @@
     "category": "shearing-machines",
     "image": "/placeholder.svg",
     "description": "Hydraulic shearing for 6mm thick, 3200mm wide sheets.",
-    "powerRange": "6mm Capacity",
-    "cuttingArea": "3200mm"
+    "specs": {
+      "Max Cutting Thickness": "6mm (Mild Steel)",
+      "Max Cutting Length": "3200mm",
+      "Strokes per Minute": "12-20"
+    }
   },
   {
     "id": "flw-1500",
@@ -36,8 +75,11 @@
     "category": "fiber-laser-welders",
     "image": "/placeholder.svg",
     "description": "1.5kW handheld fiber laser welder for precise and fast welding.",
-    "powerRange": "1.5kW",
-    "cuttingArea": "N/A"
+    "specs": {
+      "Laser Power": "1.5kW",
+      "Welding Depth": "Up to 4mm",
+      "Cooling Method": "Water Cooled"
+    }
   },
   {
     "id": "lc-4020",
@@ -46,8 +88,10 @@
     "category": "laser-cutting",
     "image": "/placeholder.svg",
     "description": "Large format fiber laser for sheets up to 4m x 2m.",
-    "powerRange": "2kW - 12kW",
-    "cuttingArea": "4000mm x 2000mm"
+    "specs": {
+      "Power Range": "2kW - 12kW",
+      "Working Area": "4000mm x 2000mm"
+    }
   },
   {
     "id": "pb-20040",
@@ -56,7 +100,9 @@
     "category": "cnc-press-brakes",
     "image": "/placeholder.svg",
     "description": "Heavy-duty 200-ton press brake for demanding applications.",
-    "powerRange": "200 Ton",
-    "cuttingArea": "4000mm"
+    "specs": {
+      "Tonnage": "200 Ton",
+      "Bending Length": "4000mm"
+    }
   }
 ]

@@ -22,6 +22,8 @@ const ProductDetail = () => {
     return <NotFound />;
   }
 
+  const hasModels = product.models && product.models.length > 0;
+
   return (
     <div className="bg-background">
       {/* Breadcrumb and Title Section */}
@@ -53,59 +55,82 @@ const ProductDetail = () => {
               />
             </div>
 
-            {/* Product Details with Tabs */}
-            <div>
-              <Tabs defaultValue="details" className="w-full">
-                <TabsList className="grid w-full grid-cols-3">
-                  <TabsTrigger value="details">Details</TabsTrigger>
-                  <TabsTrigger value="video">Product Video</TabsTrigger>
-                  <TabsTrigger value="samples">Cutting Samples</TabsTrigger>
-                </TabsList>
-                
-                <TabsContent value="details" className="mt-6">
-                  <h2 className="text-3xl font-bold mb-4">Description</h2>
-                  <p className="text-muted-foreground text-lg mb-8">{product.description}</p>
+            {/* Product Details */}
+            <div className="space-y-12">
+              <div>
+                <h2 className="text-3xl font-bold mb-4">Description</h2>
+                <p className="text-muted-foreground text-lg">{product.description}</p>
+              </div>
 
-                  <h3 className="text-2xl font-bold mb-4">Specifications</h3>
-                  <Table>
-                    <TableBody>
-                      <TableRow>
-                        <TableCell className="font-semibold">Power Range</TableCell>
-                        <TableCell>{product.powerRange}</TableCell>
-                      </TableRow>
-                      <TableRow>
-                        <TableCell className="font-semibold">Working Area</TableCell>
-                        <TableCell>{product.cuttingArea}</TableCell>
-                      </TableRow>
-                    </TableBody>
-                  </Table>
-                </TabsContent>
-
-                <TabsContent value="video" className="mt-6">
-                  <h2 className="text-3xl font-bold mb-4">Watch it in Action</h2>
-                  <div className="aspect-video bg-muted rounded-lg flex items-center justify-center relative overflow-hidden border cursor-pointer group">
-                    <img src="/placeholder.svg" alt="Product video thumbnail" className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" />
-                    <div className="absolute inset-0 bg-black/40"></div>
-                    <PlayCircle className="h-20 w-20 text-white/80 absolute z-10 transition-transform duration-300 group-hover:scale-110" />
-                    <p className="absolute bottom-4 left-4 text-white font-semibold">Video coming soon</p>
-                  </div>
-                </TabsContent>
-
-                <TabsContent value="samples" className="mt-6">
-                  <h2 className="text-3xl font-bold mb-4">Cutting Samples</h2>
-                  <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
-                    {[...Array(6)].map((_, i) => (
-                      <div key={i} className="aspect-square bg-muted rounded-lg overflow-hidden border group">
-                        <img src="/placeholder.svg" alt={`Cutting sample ${i + 1}`} className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" />
-                      </div>
+              <div>
+                <h2 className="text-3xl font-bold mb-4">Specifications</h2>
+                {hasModels ? (
+                  <Tabs defaultValue={product.models[0].name} className="w-full">
+                    <TabsList>
+                      {product.models.map((model) => (
+                        <TabsTrigger key={model.name} value={model.name}>
+                          {model.name} Model
+                        </TabsTrigger>
+                      ))}
+                    </TabsList>
+                    {product.models.map((model) => (
+                      <TabsContent key={model.name} value={model.name} className="mt-4">
+                        <Table>
+                          <TableBody>
+                            {Object.entries(model.specs).map(([key, value]) => (
+                              <TableRow key={key}>
+                                <TableCell className="font-semibold">{key}</TableCell>
+                                <TableCell>{String(value)}</TableCell>
+                              </TableRow>
+                            ))}
+                          </TableBody>
+                        </Table>
+                      </TabsContent>
                     ))}
-                  </div>
-                </TabsContent>
-              </Tabs>
+                  </Tabs>
+                ) : (
+                  product.specs && (
+                    <Table>
+                      <TableBody>
+                        {Object.entries(product.specs).map(([key, value]) => (
+                          <TableRow key={key}>
+                            <TableCell className="font-semibold">{key}</TableCell>
+                            <TableCell>{String(value)}</TableCell>
+                          </TableRow>
+                        ))}
+                      </TableBody>
+                    </Table>
+                  )
+                )}
+              </div>
 
-              <Button size="lg" asChild className="mt-8 w-full sm:w-auto">
+              <Button size="lg" asChild className="w-full sm:w-auto">
                 <NavLink to="/sales-enquiry">Request a Quote</NavLink>
               </Button>
+            </div>
+          </div>
+
+          {/* Video and Samples Section */}
+          <div className="mt-16 md:mt-24 space-y-16">
+            <div>
+              <h2 className="text-3xl font-bold mb-6 text-center">Watch it in Action</h2>
+              <div className="aspect-video max-w-4xl mx-auto bg-muted rounded-lg flex items-center justify-center relative overflow-hidden border cursor-pointer group">
+                <img src="/placeholder.svg" alt="Product video thumbnail" className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" />
+                <div className="absolute inset-0 bg-black/40"></div>
+                <PlayCircle className="h-20 w-20 text-white/80 absolute z-10 transition-transform duration-300 group-hover:scale-110" />
+                <p className="absolute bottom-4 left-4 text-white font-semibold">Video coming soon</p>
+              </div>
+            </div>
+
+            <div>
+              <h2 className="text-3xl font-bold mb-6 text-center">Cutting Samples</h2>
+              <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
+                {[...Array(6)].map((_, i) => (
+                  <div key={i} className="aspect-square bg-muted rounded-lg overflow-hidden border group">
+                    <img src="/placeholder.svg" alt={`Cutting sample ${i + 1}`} className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" />
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </div>
