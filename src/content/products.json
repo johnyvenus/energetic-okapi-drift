@@ -1,0 +1,62 @@
+[
+  {
+    "id": "lc-3015",
+    "name": "LC-3015 Fiber Laser",
+    "slug": "lc-3015-fiber-laser",
+    "category": "laser-cutting",
+    "image": "/placeholder.svg",
+    "description": "High-speed fiber laser cutting for sheet metal up to 20mm.",
+    "powerRange": "1kW - 6kW",
+    "cuttingArea": "3000mm x 1500mm"
+  },
+  {
+    "id": "pb-10032",
+    "name": "PB-10032 CNC Press Brake",
+    "slug": "pb-10032-cnc-press-brake",
+    "category": "cnc-press-brakes",
+    "image": "/placeholder.svg",
+    "description": "100-ton press brake with a 3200mm bending length.",
+    "powerRange": "100 Ton",
+    "cuttingArea": "3200mm"
+  },
+  {
+    "id": "sm-0632",
+    "name": "SM-0632 Shearing Machine",
+    "slug": "sm-0632-shearing-machine",
+    "category": "shearing-machines",
+    "image": "/placeholder.svg",
+    "description": "Hydraulic shearing for 6mm thick, 3200mm wide sheets.",
+    "powerRange": "6mm Capacity",
+    "cuttingArea": "3200mm"
+  },
+  {
+    "id": "flw-1500",
+    "name": "FLW-1500 Handheld Welder",
+    "slug": "flw-1500-handheld-welder",
+    "category": "fiber-laser-welders",
+    "image": "/placeholder.svg",
+    "description": "1.5kW handheld fiber laser welder for precise and fast welding.",
+    "powerRange": "1.5kW",
+    "cuttingArea": "N/A"
+  },
+  {
+    "id": "lc-4020",
+    "name": "LC-4020 Fiber Laser",
+    "slug": "lc-4020-fiber-laser",
+    "category": "laser-cutting",
+    "image": "/placeholder.svg",
+    "description": "Large format fiber laser for sheets up to 4m x 2m.",
+    "powerRange": "2kW - 12kW",
+    "cuttingArea": "4000mm x 2000mm"
+  },
+  {
+    "id": "pb-20040",
+    "name": "PB-20040 CNC Press Brake",
+    "slug": "pb-20040-cnc-press-brake",
+    "category": "cnc-press-brakes",
+    "image": "/placeholder.svg",
+    "description": "Heavy-duty 200-ton press brake for demanding applications.",
+    "powerRange": "200 Ton",
+    "cuttingArea": "4000mm"
+  }
+]
