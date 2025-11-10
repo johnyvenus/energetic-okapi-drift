@@ -2,7 +2,6 @@ import Hero from "@/components/Hero";
 import TrustStrip from "@/components/TrustStrip";
 import FeaturedCategories from "@/components/FeaturedCategories";
 import WhyUs from "@/components/WhyUs";
-import LatestPosts from "@/components/LatestPosts";
 import ContactTeaser from "@/components/ContactTeaser";
 
 const Home = () => {
@@ -12,7 +11,6 @@ const Home = () => {
       <TrustStrip />
       <FeaturedCategories />
       <WhyUs />
-      <LatestPosts />
       <ContactTeaser />
     </div>
   );
