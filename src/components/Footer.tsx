@@ -27,8 +27,8 @@ const Footer = () => {
               <li>Main Sohna Road,</li>
               <li>Radha Soami Satsang Mor,</li>
               <li>Faridabad, Haryana 121004</li>
-              <li>Phone: +91-9718335075</li>
-              <li>Email: rohit@avifbd.com</li>
+              <li>Phone: <a href="tel:+919718335075" className="hover:text-primary">+91-9718335075</a></li>
+              <li>Email: <a href="mailto:rohit@avifbd.com" className="hover:text-primary">rohit@avifbd.com</a></li>
             </ul>
           </div>
           <div>
