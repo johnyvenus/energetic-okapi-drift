@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
@@ -12,6 +13,8 @@ const navLinks = [
 ];
 
 const Header = () => {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
   const getLinkClass = ({ isActive }: { isActive: boolean }) =>
     `pb-1 border-b-2 transition-colors ${
       isActive
@@ -44,7 +47,7 @@ const Header = () => {
 
         {/* Mobile Navigation */}
         <div className="md:hidden">
-          <Sheet>
+          <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
             <SheetTrigger asChild>
               <Button variant="outline" size="icon">
                 <Menu className="h-6 w-6" />
@@ -52,7 +55,7 @@ const Header = () => {
             </SheetTrigger>
             <SheetContent side="right">
               <div className="flex flex-col gap-6 p-6">
-                <NavLink to="/" className="flex items-center gap-2 mb-4">
+                <NavLink to="/" className="flex items-center gap-2 mb-4" onClick={() => setIsMobileMenuOpen(false)}>
                   <img src="/placeholder.svg" alt="Company Logo" className="h-8 w-8" />
                   <span className="font-bold text-xl text-primary">MachineCo</span>
                 </NavLink>
@@ -61,6 +64,7 @@ const Header = () => {
                     <NavLink
                       key={link.to}
                       to={link.to}
+                      onClick={() => setIsMobileMenuOpen(false)}
                       className={({ isActive }) =>
                         `text-lg ${isActive ? "text-primary font-semibold" : "text-foreground/80"}`
                       }
@@ -70,7 +74,7 @@ const Header = () => {
                   ))}
                 </nav>
                 <Button asChild className="mt-4">
-                  <NavLink to="/sales-enquiry">Get Quote</NavLink>
+                  <NavLink to="/sales-enquiry" onClick={() => setIsMobileMenuOpen(false)}>Get Quote</NavLink>
                 </Button>
               </div>
             </SheetContent>
