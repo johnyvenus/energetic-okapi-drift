@@ -15,6 +15,8 @@ import {
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { showSuccess } from "@/utils/toast";
+import { useSearchParams } from "react-router-dom";
+import { useEffect } from "react";
 
 const formSchema = z.object({
   name: z.string().min(2, { message: "Name must be at least 2 characters." }),
@@ -26,6 +28,9 @@ const formSchema = z.object({
 });
 
 export function SalesEnquiryForm() {
+  const [searchParams] = useSearchParams();
+  const product = searchParams.get("product");
+
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -33,10 +38,16 @@ export function SalesEnquiryForm() {
       company: "",
       email: "",
       phone: "",
-      productOfInterest: "",
+      productOfInterest: product || "",
       message: "",
     },
   });
+
+  useEffect(() => {
+    if (product) {
+      form.setValue("productOfInterest", product);
+    }
+  }, [product, form]);
 
   function onSubmit(values: z.infer<typeof formSchema>) {
     console.log("Sales Enquiry submitted:", values);

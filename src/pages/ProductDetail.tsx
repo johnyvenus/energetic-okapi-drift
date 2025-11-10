@@ -105,7 +105,7 @@ const ProductDetail = () => {
               </div>
 
               <Button size="lg" asChild className="w-full sm:w-auto">
-                <NavLink to="/sales-enquiry">Request a Quote</NavLink>
+                <NavLink to={`/sales-enquiry?product=${encodeURIComponent(product.name)}`}>Request a Quote</NavLink>
               </Button>
             </div>
           </div>
