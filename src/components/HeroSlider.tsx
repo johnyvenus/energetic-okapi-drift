@@ -66,7 +66,17 @@ const HeroSlider = () => {
                     </p>
                     <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
                       {slide.buttons.map((button, btnIndex) => (
-                        <Button key={btnIndex} size="lg" variant={button.variant === 'outline' ? 'outline' : 'default'} asChild>
+                        <Button
+                          key={btnIndex}
+                          size="lg"
+                          variant={button.variant === 'outline' ? 'outline' : 'default'}
+                          className={
+                            button.variant === 'outline'
+                              ? 'text-white border-white hover:bg-white hover:text-foreground'
+                              : ''
+                          }
+                          asChild
+                        >
                           {button.link.startsWith('/') ? (
                             <NavLink to={button.link}>{button.text}</NavLink>
                           ) : (
