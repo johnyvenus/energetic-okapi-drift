@@ -23,7 +23,7 @@ const Header = () => {
     }`;
 
   return (
-    <header className="bg-background/95 sticky top-0 z-50 backdrop-blur-sm border-b">
+    <header className="bg-background/80 sticky top-0 z-50 backdrop-blur-lg border-b">
       <div className="container mx-auto flex items-center justify-between h-16 px-4 md:px-6">
         <NavLink to="/" className="flex items-center gap-2">
           <img src="/placeholder.svg" alt="Company Logo" className="h-8 w-8" />

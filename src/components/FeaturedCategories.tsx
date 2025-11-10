@@ -42,7 +42,7 @@ const FeaturedCategories = () => {
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {categories.map((category) => (
-            <Card key={category.name} className="overflow-hidden group">
+            <Card key={category.name} className="overflow-hidden group transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
               <CardHeader className="p-0">
                 <img src={category.image} alt={category.name} className="w-full h-48 object-cover" />
               </CardHeader>

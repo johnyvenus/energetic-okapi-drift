@@ -18,7 +18,7 @@ interface ProductCardProps {
 
 const ProductCard = ({ product }: ProductCardProps) => {
   return (
-    <Card className="flex flex-col">
+    <Card className="flex flex-col transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
       <CardHeader className="p-0">
         <img src={product.image} alt={product.name} className="w-full h-48 object-cover rounded-t-lg" />
       </CardHeader>

@@ -10,7 +10,7 @@ interface LeadershipCardProps {
 const LeadershipCard = ({ name, title, imageUrl }: LeadershipCardProps) => {
   const fallback = name.split(' ').map(n => n[0]).join('');
   return (
-    <Card className="text-center">
+    <Card className="text-center transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
       <CardHeader>
         <Avatar className="w-24 h-24 mx-auto">
           <AvatarImage src={imageUrl} alt={name} />
