@@ -1,5 +1,7 @@
 import ProductCard from "@/components/ProductCard";
 import productsData from "@/content/products.json";
+import LifecycleSupport from "@/components/LifecycleSupport";
+import ContactTeaser from "@/components/ContactTeaser";
 
 const Products = () => {
   return (
@@ -22,6 +24,9 @@ const Products = () => {
           </div>
         </div>
       </section>
+
+      <LifecycleSupport />
+      <ContactTeaser />
     </div>
   );
 };
