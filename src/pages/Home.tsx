@@ -1,4 +1,4 @@
-import Hero from "@/components/Hero";
+import HeroSlider from "@/components/HeroSlider";
 import TrustStrip from "@/components/TrustStrip";
 import IntroSection from "@/components/IntroSection";
 import FeaturedCategories from "@/components/FeaturedCategories";
@@ -10,7 +10,7 @@ import ContactTeaser from "@/components/ContactTeaser";
 const Home = () => {
   return (
     <div>
-      <Hero />
+      <HeroSlider />
       <TrustStrip />
       <IntroSection />
       <FeaturedCategories />
