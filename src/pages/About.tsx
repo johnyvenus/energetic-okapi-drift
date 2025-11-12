@@ -2,25 +2,25 @@ import LeadershipCard from "@/components/LeadershipCard";
 import PhotoGallery from "@/components/PhotoGallery";
 
 const leadership = [
-  { name: "Rohan Sharma", title: "Founder & CEO", imageUrl: "/placeholder.svg" },
-  { name: "Priya Singh", title: "Chief Operating Officer", imageUrl: "/placeholder.svg" },
-  { name: "Amit Patel", title: "Head of Engineering", imageUrl: "/placeholder.svg" },
-  { name: "Anjali Mehta", title: "Director of Sales", imageUrl: "/placeholder.svg" },
+  { name: "Rohan Sharma", title: "Founder & CEO", imageUrl: "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?q=80&w=400&auto=format&fit=crop" },
+  { name: "Priya Singh", title: "Chief Operating Officer", imageUrl: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=400&auto=format&fit=crop" },
+  { name: "Amit Patel", title: "Head of Engineering", imageUrl: "https://images.unsplash.com/photo-1564564321837-a57b7070ac4f?q=80&w=400&auto=format&fit=crop" },
+  { name: "Anjali Mehta", title: "Director of Sales", imageUrl: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=400&auto=format&fit=crop" },
 ];
 
 const facilityImages = [
-  { src: "/placeholder.svg", alt: "Factory floor" },
-  { src: "/placeholder.svg", alt: "CNC machine in action" },
-  { src: "/placeholder.svg", alt: "Quality control station" },
-  { src: "/placeholder.svg", alt: "Warehouse and logistics" },
-  { src: "/placeholder.svg", alt: "R&D department" },
-  { src: "/placeholder.svg", alt: "Assembled machines" },
+  { src: "https://images.unsplash.com/photo-1567789884554-0b844b597180?q=80&w=800&auto=format&fit=crop", alt: "Factory floor" },
+  { src: "https://images.unsplash.com/photo-1629904039742-61185582a1b1?q=80&w=800&auto=format&fit=crop", alt: "CNC machine in action" },
+  { src: "https://images.unsplash.com/photo-1581092446347-a56c5b5a1a8a?q=80&w=800&auto=format&fit=crop", alt: "Quality control station" },
+  { src: "https://images.unsplash.com/photo-1587293852726-70cdb122c294?q=80&w=800&auto=format&fit=crop", alt: "Warehouse and logistics" },
+  { src: "https://images.unsplash.com/photo-1518152006812-edab29b069ac?q=80&w=800&auto=format&fit=crop", alt: "R&D department" },
+  { src: "https://images.unsplash.com/photo-1557699242-52f77ab4a483?q=80&w=800&auto=format&fit=crop", alt: "Assembled machines" },
 ];
 
 const certifications = [
-    { name: "ISO 9001:2015", description: "Quality Management Systems", logo: "/placeholder.svg" },
-    { name: "CE Marking", description: "Conformity with European standards", logo: "/placeholder.svg" },
-    { name: "Make in India", description: "Promoting domestic manufacturing", logo: "/placeholder.svg" },
+    { name: "ISO 9001:2015", description: "Quality Management Systems", logo: "https://img.icons8.com/fluency/96/quality.png" },
+    { name: "CE Marking", description: "Conformity with European standards", logo: "https://img.icons8.com/fluency/96/checked-shield.png" },
+    { name: "Make in India", description: "Promoting domestic manufacturing", logo: "https://upload.wikimedia.org/wikipedia/en/thumb/1/11/Make_in_India_logo.svg/2560px-Make_in_India_logo.svg.png" },
 ];
 
 const About = () => {
@@ -50,7 +50,7 @@ const About = () => {
               </p>
             </div>
             <div>
-              <img src="/placeholder.svg" alt="AVI Enterprises founders" className="rounded-lg shadow-lg w-full" />
+              <img src="https://images.unsplash.com/photo-1600880292210-85938a039959?q=80&w=1024&auto=format&fit=crop" alt="AVI Enterprises founders" className="rounded-lg shadow-lg w-full" />
             </div>
           </div>
         </div>
@@ -68,7 +68,7 @@ const About = () => {
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
                 {certifications.map(cert => (
                     <div key={cert.name} className="flex flex-col items-center text-center p-6 border rounded-lg bg-background">
-                        <img src={cert.logo} alt={`${cert.name} logo`} className="h-20 w-20 mb-4" />
+                        <img src={cert.logo} alt={`${cert.name} logo`} className="h-20 w-20 mb-4 object-contain" />
                         <h3 className="font-semibold text-xl">{cert.name}</h3>
                         <p className="text-muted-foreground">{cert.description}</p>
                     </div>

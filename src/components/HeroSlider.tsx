@@ -10,7 +10,7 @@ import { NavLink } from "react-router-dom";
 
 const slides = [
   {
-    image: "/placeholder.svg",
+    image: "https://images.unsplash.com/photo-1567789884554-0b844b597180?q=80&w=1920&auto=format&fit=crop",
     title: "Precision Engineering for Modern Industry",
     description: "High-performance industrial machines built for reliability, efficiency, and growth.",
     buttons: [
@@ -19,7 +19,7 @@ const slides = [
     ],
   },
   {
-    image: "/placeholder.svg",
+    image: "https://images.unsplash.com/photo-1611171736155-3535f5c224a8?q=80&w=1920&auto=format&fit=crop",
     title: "Innovative Laser Cutting Solutions",
     description: "Experience unparalleled accuracy and speed with our state-of-the-art fiber laser machines.",
     buttons: [
@@ -28,7 +28,7 @@ const slides = [
     ],
   },
   {
-    image: "/placeholder.svg",
+    image: "https://images.unsplash.com/photo-1629904039742-61185582a1b1?q=80&w=1920&auto=format&fit=crop",
     title: "Advanced CNC Press Brakes",
     description: "Achieve perfect bends every time. Our CNC press brakes offer superior control and durability.",
     buttons: [

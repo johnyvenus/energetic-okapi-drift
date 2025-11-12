@@ -26,7 +26,7 @@ const WhyUs = () => {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
             <img
-              src="/placeholder.svg"
+              src="https://images.unsplash.com/photo-1557699242-52f77ab4a483?q=80&w=1024&auto=format&fit=crop"
               alt="Factory Interior"
               className="rounded-lg shadow-lg w-full h-auto"
             />

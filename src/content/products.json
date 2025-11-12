@@ -4,7 +4,7 @@
     "name": "LC-3015 Fiber Laser",
     "slug": "lc-3015-fiber-laser",
     "category": "laser-cutting",
-    "image": "/placeholder.svg",
+    "image": "https://images.unsplash.com/photo-1589992896382-18a4914a3874?q=80&w=800&auto=format&fit=crop",
     "description": "High-speed fiber laser cutting for sheet metal up to 20mm. Available in multiple configurations to match your production needs.",
     "models": [
       {
@@ -32,7 +32,7 @@
     "name": "PB-10032 CNC Press Brake",
     "slug": "pb-10032-cnc-press-brake",
     "category": "cnc-press-brakes",
-    "image": "/placeholder.svg",
+    "image": "https://images.unsplash.com/photo-1629904039742-61185582a1b1?q=80&w=800&auto=format&fit=crop",
     "description": "100-ton press brake with a 3200mm bending length, equipped with advanced CNC controls for precision forming.",
     "models": [
       {
@@ -60,7 +60,7 @@
     "name": "SM-0632 Shearing Machine",
     "slug": "sm-0632-shearing-machine",
     "category": "shearing-machines",
-    "image": "/placeholder.svg",
+    "image": "https://images.unsplash.com/photo-1556912173-353abe0c4934?q=80&w=800&auto=format&fit=crop",
     "description": "Hydraulic shearing for 6mm thick, 3200mm wide sheets.",
     "specs": {
       "Max Cutting Thickness": "6mm (Mild Steel)",
@@ -73,7 +73,7 @@
     "name": "FLW-1500 Handheld Welder",
     "slug": "flw-1500-handheld-welder",
     "category": "fiber-laser-welders",
-    "image": "/placeholder.svg",
+    "image": "https://images.unsplash.com/photo-1560263816-d704d83cce0f?q=80&w=800&auto=format&fit=crop",
     "description": "1.5kW handheld fiber laser welder for precise and fast welding.",
     "specs": {
       "Laser Power": "1.5kW",
@@ -86,7 +86,7 @@
     "name": "LC-4020 Fiber Laser",
     "slug": "lc-4020-fiber-laser",
     "category": "laser-cutting",
-    "image": "/placeholder.svg",
+    "image": "https://images.unsplash.com/photo-1611171736155-3535f5c224a8?q=80&w=800&auto=format&fit=crop",
     "description": "Large format fiber laser for sheets up to 4m x 2m.",
     "specs": {
       "Power Range": "2kW - 12kW",
@@ -98,7 +98,7 @@
     "name": "PB-20040 CNC Press Brake",
     "slug": "pb-20040-cnc-press-brake",
     "category": "cnc-press-brakes",
-    "image": "/placeholder.svg",
+    "image": "https://images.unsplash.com/photo-1581092919534-992f3f17b534?q=80&w=800&auto=format&fit=crop",
     "description": "Heavy-duty 200-ton press brake for demanding applications.",
     "specs": {
       "Tonnage": "200 Ton",

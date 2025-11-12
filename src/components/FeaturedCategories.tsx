@@ -7,25 +7,25 @@ const categories = [
   {
     name: "Laser Cutting Machines",
     description: "High-precision cutting for various materials.",
-    image: "/placeholder.svg",
+    image: "https://images.unsplash.com/photo-1589992896382-18a4914a3874?q=80&w=800&auto=format&fit=crop",
     link: "/products/laser-cutting",
   },
   {
     name: "CNC Press Brakes",
     description: "Accurate bending and forming solutions.",
-    image: "/placeholder.svg",
+    image: "https://images.unsplash.com/photo-1629904039742-61185582a1b1?q=80&w=800&auto=format&fit=crop",
     link: "/products/cnc-press-brakes",
   },
   {
     name: "Shearing Machines",
     description: "Reliable and powerful shearing for sheet metal.",
-    image: "/placeholder.svg",
+    image: "https://images.unsplash.com/photo-1556912173-353abe0c4934?q=80&w=800&auto=format&fit=crop",
     link: "/products/shearing-machines",
   },
   {
     name: "Fiber Laser Welders",
     description: "Advanced welding technology for strong joints.",
-    image: "/placeholder.svg",
+    image: "https://images.unsplash.com/photo-1560263816-d704d83cce0f?q=80&w=800&auto=format&fit=crop",
     link: "/products/fiber-laser-welders",
   },
 ];

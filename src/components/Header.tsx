@@ -26,7 +26,7 @@ const Header = () => {
     <header className="bg-background/80 sticky top-0 z-50 backdrop-blur-lg border-b">
       <div className="container mx-auto flex items-center justify-between h-16 px-4 md:px-6">
         <NavLink to="/" className="flex items-center gap-2">
-          <img src="/placeholder.svg" alt="Company Logo" className="h-8 w-8" />
+          <img src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?q=80&w=400&auto=format&fit=crop" alt="Company Logo" className="h-8 w-8 rounded-full" />
           <span className="font-bold text-xl text-primary">AVI Enterprises</span>
         </NavLink>
 
@@ -56,7 +56,7 @@ const Header = () => {
             <SheetContent side="right">
               <div className="flex flex-col gap-6 p-6">
                 <NavLink to="/" className="flex items-center gap-2 mb-4" onClick={() => setIsMobileMenuOpen(false)}>
-                  <img src="/placeholder.svg" alt="Company Logo" className="h-8 w-8" />
+                  <img src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?q=80&w=400&auto=format&fit=crop" alt="Company Logo" className="h-8 w-8 rounded-full" />
                   <span className="font-bold text-xl text-primary">AVI Enterprises</span>
                 </NavLink>
                 <nav className="flex flex-col gap-4">
