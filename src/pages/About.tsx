@@ -1,12 +1,4 @@
-import LeadershipCard from "@/components/LeadershipCard";
 import PhotoGallery from "@/components/PhotoGallery";
-
-const leadership = [
-  { name: "Rohan Sharma", title: "Founder & CEO", imageUrl: "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?q=80&w=400&auto=format&fit=crop" },
-  { name: "Priya Singh", title: "Chief Operating Officer", imageUrl: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=400&auto=format&fit=crop" },
-  { name: "Amit Patel", title: "Head of Engineering", imageUrl: "https://images.unsplash.com/photo-1564564321837-a57b7070ac4f?q=80&w=400&auto=format&fit=crop" },
-  { name: "Anjali Mehta", title: "Director of Sales", imageUrl: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=400&auto=format&fit=crop" },
-];
 
 const facilityImages = [
   { src: "https://images.unsplash.com/photo-1567789884554-0b844b597180?q=80&w=800&auto=format&fit=crop", alt: "Factory floor" },
@@ -17,12 +9,6 @@ const facilityImages = [
   { src: "https://images.unsplash.com/photo-1557699242-52f77ab4a483?q=80&w=800&auto=format&fit=crop", alt: "Assembled machines" },
 ];
 
-const certifications = [
-    { name: "ISO 9001:2015", description: "Quality Management Systems", logo: "https://img.icons8.com/fluency/96/quality.png" },
-    { name: "CE Marking", description: "Conformity with European standards", logo: "https://img.icons8.com/fluency/96/checked-shield.png" },
-    { name: "Make in India", description: "Promoting domestic manufacturing", logo: "https://upload.wikimedia.org/wikipedia/en/thumb/1/11/Make_in_India_logo.svg/2560px-Make_in_India_logo.svg.png" },
-];
-
 const About = () => {
   return (
     <div className="bg-background">
@@ -31,7 +17,7 @@ const About = () => {
         <div className="container mx-auto px-4 md:px-6 text-center">
           <h1 className="text-4xl md:text-5xl font-bold text-foreground">About AVI Enterprises</h1>
           <p className="mt-4 text-lg max-w-3xl mx-auto text-muted-foreground">
-            Pioneering industrial manufacturing in India with a commitment to quality, innovation, and customer success for over 25 years.
+            A high-tech company specializing in manufacturing and distributing welding & cutting equipment for over 9 years.
           </p>
         </div>
       </section>
@@ -41,44 +27,28 @@ const About = () => {
         <div className="container mx-auto px-4 md:px-6">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl font-bold mb-4">Our Story</h2>
-              <p className="text-muted-foreground mb-4">
-                Founded in 1998, AVI Enterprises started as a small workshop with a big vision: to build world-class industrial machinery in India. Through relentless dedication to engineering excellence and a customer-first approach, we have grown into a leading manufacturer, trusted by thousands of businesses across the country and beyond.
-              </p>
-              <p className="text-muted-foreground">
-                Our journey is one of continuous innovation. We invest heavily in research and development to stay at the forefront of technology, ensuring our machines deliver unparalleled performance, reliability, and value.
-              </p>
+              <h2 className="text-3xl font-bold mb-4">Our Company</h2>
+              <div className="space-y-4 text-muted-foreground">
+                <p>
+                  AVI Enterprises Equipment is a high tech company which specializes in manufacturing and distributing welding & cutting equipments. For more than a 9 year, based on the principles of advance technologies, best quality as well as thoughtful services, AVI Enterprises determines itself to be a global brand in cutting industry.
+                </p>
+                <p>
+                  We have a qualified team with big experience in fiber laser and CNC plasma and co-efficient technologies. AVI Enterprises equipment has been committed to the development and production of intelligent CNC products, such as fiber laser cutting machines and CNC plasma cutting machines with high precision, high intelligence, and safe and durable design.
+                </p>
+                <p>
+                  Cooperation with a long and guaranteed system and perfect after-sales service has made us who we are today. We are dedicated to providing customers with laser cutting, welding machines, plasma cutting machines, Arc welding machines, MIG welding machines, and all cutting and welding equipment solutions.
+                </p>
+              </div>
             </div>
             <div>
-              <img src="https://images.unsplash.com/photo-1600880292210-85938a039959?q=80&w=1024&auto=format&fit=crop" alt="AVI Enterprises founders" className="rounded-lg shadow-lg w-full" />
+              <img src="https://images.unsplash.com/photo-1600880292210-85938a039959?q=80&w=1024&auto=format&fit=crop" alt="AVI Enterprises team" className="rounded-lg shadow-lg w-full" />
             </div>
           </div>
         </div>
       </section>
 
-      {/* Certifications Section */}
-      <section className="py-16 md:py-24 bg-muted">
-        <div className="container mx-auto px-4 md:px-6">
-            <div className="text-center mb-12">
-                <h2 className="text-3xl font-bold">Quality & Certifications</h2>
-                <p className="mt-4 text-lg text-muted-foreground">
-                    Our commitment to global standards of quality and safety.
-                </p>
-            </div>
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
-                {certifications.map(cert => (
-                    <div key={cert.name} className="flex flex-col items-center text-center p-6 border rounded-lg bg-background">
-                        <img src={cert.logo} alt={`${cert.name} logo`} className="h-20 w-20 mb-4 object-contain" />
-                        <h3 className="font-semibold text-xl">{cert.name}</h3>
-                        <p className="text-muted-foreground">{cert.description}</p>
-                    </div>
-                ))}
-            </div>
-        </div>
-      </section>
-
       {/* Facility Section */}
-      <section className="py-16 md:py-24">
+      <section className="py-16 md:py-24 bg-secondary">
         <div className="container mx-auto px-4 md:px-6">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold">Our State-of-the-Art Facility</h2>
@@ -87,23 +57,6 @@ const About = () => {
             </p>
           </div>
           <PhotoGallery images={facilityImages} />
-        </div>
-      </section>
-
-      {/* Leadership Section */}
-      <section className="py-16 md:py-24 bg-secondary">
-        <div className="container mx-auto px-4 md:px-6">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold">Meet Our Leadership</h2>
-            <p className="mt-4 text-lg text-muted-foreground">
-              The driving force behind our success.
-            </p>
-          </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            {leadership.map((member) => (
-              <LeadershipCard key={member.name} {...member} />
-            ))}
-          </div>
         </div>
       </section>
     </div>

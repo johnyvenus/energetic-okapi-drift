@@ -23,10 +23,10 @@ const Footer = () => {
           <div>
             <h3 className="font-semibold mb-4 text-foreground">Contact Us</h3>
             <ul className="space-y-2 text-sm">
-              <li>Kila No. 17/1, Rakba 2,</li>
-              <li>Main Sohna Road,</li>
+              <li>Kila No. 17/1, Rakba No. 2,</li>
+              <li>Main Sohna Road, Near,</li>
               <li>Radha Soami Satsang Mor,</li>
-              <li>Faridabad, Haryana 121004</li>
+              <li>N.I.T Faridabad, Haryana-121004</li>
               <li>Phone: <a href="tel:+919718335075" className="hover:text-primary">+91-9718335075</a></li>
               <li>Email: <a href="mailto:rohit@avifbd.com" className="hover:text-primary">rohit@avifbd.com</a></li>
             </ul>

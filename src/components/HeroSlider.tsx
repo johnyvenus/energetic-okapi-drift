@@ -10,12 +10,12 @@ import { NavLink } from "react-router-dom";
 
 const slides = [
   {
-    image: "https://images.unsplash.com/photo-1567789884554-0b844b597180?q=80&w=1920&auto=format&fit=crop",
-    title: "Precision Engineering for Modern Industry",
-    description: "High-performance industrial machines built for reliability, efficiency, and growth.",
+    image: "https://images.unsplash.com/photo-1589992896382-18a4914a3874?q=80&w=1920&auto=format&fit=crop",
+    title: "We make your cutting Easier, Better & Faster",
+    description: "Specializing in Plasma Cutting, Fibre Laser, Sharing & Bending Machines.",
     buttons: [
       { text: "Get Quote", link: "/sales-enquiry", variant: "default" },
-      { text: "Download Brochure", link: "/brochure.pdf", variant: "outline" },
+      { text: "View Products", link: "/products", variant: "outline" },
     ],
   },
   {
@@ -23,7 +23,7 @@ const slides = [
     title: "Innovative Laser Cutting Solutions",
     description: "Experience unparalleled accuracy and speed with our state-of-the-art fiber laser machines.",
     buttons: [
-      { text: "Explore Laser Cutters", link: "/products/laser-cutting", variant: "default" },
+      { text: "Explore Laser Cutters", link: "/products", variant: "default" },
       { text: "Contact Sales", link: "/contact", variant: "outline" },
     ],
   },
@@ -32,7 +32,7 @@ const slides = [
     title: "Advanced CNC Press Brakes",
     description: "Achieve perfect bends every time. Our CNC press brakes offer superior control and durability.",
     buttons: [
-      { text: "View Press Brakes", link: "/products/cnc-press-brakes", variant: "default" },
+      { text: "View Press Brakes", link: "/products", variant: "default" },
       { text: "Request a Demo", link: "/sales-enquiry", variant: "outline" },
     ],
   },
@@ -65,18 +65,14 @@ const HeroSlider = () => {
                       {slide.description}
                     </p>
                     <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
-                      {slide.buttons.map((button, btnIndex) => (
+                      {slides[0].buttons.map((button, btnIndex) => (
                         <Button
                           key={btnIndex}
                           size="lg"
                           variant={button.variant === 'outline' ? 'outline-inverse' : 'default'}
                           asChild
                         >
-                          {button.link.startsWith('/') ? (
-                            <NavLink to={button.link}>{button.text}</NavLink>
-                          ) : (
-                            <a href={button.link} download={button.text.includes('Brochure')}>{button.text}</a>
-                          )}
+                          <NavLink to={button.link}>{button.text}</NavLink>
                         </Button>
                       ))}
                     </div>

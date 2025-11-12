@@ -1,108 +1,77 @@
 [
   {
-    "id": "lc-3015",
-    "name": "LC-3015 Fiber Laser",
-    "slug": "lc-3015-fiber-laser",
+    "id": "single-table-fiber-laser",
+    "name": "Single Table Fiber Laser",
+    "slug": "single-table-fiber-laser",
     "category": "laser-cutting",
     "image": "https://images.unsplash.com/photo-1589992896382-18a4914a3874?q=80&w=800&auto=format&fit=crop",
-    "description": "High-speed fiber laser cutting for sheet metal up to 20mm. Available in multiple configurations to match your production needs.",
+    "description": "Efficient and precise single table fiber laser cutting machine, ideal for a wide range of metal fabrication applications.",
     "models": [
-      {
-        "name": "Standard",
-        "specs": {
-          "Power Range": "1kW - 3kW",
-          "Working Area": "3000mm x 1500mm",
-          "Max Positioning Speed": "100m/min",
-          "Positioning Accuracy": "±0.03mm"
-        }
-      },
-      {
-        "name": "Pro",
-        "specs": {
-          "Power Range": "4kW - 6kW",
-          "Working Area": "3000mm x 1500mm",
-          "Max Positioning Speed": "140m/min",
-          "Positioning Accuracy": "±0.02mm"
-        }
-      }
+      { "name": "AOME 3015", "specs": { "Track Width": "1500mm", "Track Length": "3000mm" } },
+      { "name": "AOME 4015", "specs": { "Track Width": "1500mm", "Track Length": "4000mm" } },
+      { "name": "AOME 6315", "specs": { "Track Width": "1500mm", "Track Length": "6300mm" } }
     ]
   },
   {
-    "id": "pb-10032",
-    "name": "PB-10032 CNC Press Brake",
-    "slug": "pb-10032-cnc-press-brake",
+    "id": "gantry-plasma-cutter",
+    "name": "Gantry Flame/Plasma Cutter",
+    "slug": "gantry-plasma-cutter",
+    "category": "plasma-cutting",
+    "image": "https://images.unsplash.com/photo-1617893929358-520764b93c3a?q=80&w=800&auto=format&fit=crop",
+    "description": "Heavy-duty gantry-style cutting machine supporting both plasma and flame cutting heads for versatile operation.",
+    "models": [
+      { "name": "AOME 2506", "specs": { "Track Width": "2500mm", "Track Length": "6000mm" } },
+      { "name": "AOME 3508", "specs": { "Track Width": "3500mm", "Track Length": "8000mm" } }
+    ]
+  },
+  {
+    "id": "cnc-press-brake",
+    "name": "CNC Press Brake Machine",
+    "slug": "cnc-press-brake",
     "category": "cnc-press-brakes",
     "image": "https://images.unsplash.com/photo-1629904039742-61185582a1b1?q=80&w=800&auto=format&fit=crop",
-    "description": "100-ton press brake with a 3200mm bending length, equipped with advanced CNC controls for precision forming.",
-    "models": [
-      {
-        "name": "Model S",
-        "specs": {
-          "Tonnage": "100 Ton",
-          "Bending Length": "3200mm",
-          "Axis Control": "3+1 Axis",
-          "Controller": "DELEM DA-53T"
-        }
-      },
-      {
-        "name": "Model X",
-        "specs": {
-          "Tonnage": "100 Ton",
-          "Bending Length": "3200mm",
-          "Axis Control": "4+1 Axis",
-          "Controller": "DELEM DA-66T"
-        }
-      }
-    ]
-  },
-  {
-    "id": "sm-0632",
-    "name": "SM-0632 Shearing Machine",
-    "slug": "sm-0632-shearing-machine",
-    "category": "shearing-machines",
-    "image": "https://images.unsplash.com/photo-1556912173-353abe0c4934?q=80&w=800&auto=format&fit=crop",
-    "description": "Hydraulic shearing for 6mm thick, 3200mm wide sheets.",
+    "description": "High-precision CNC press brake for accurate and repeatable sheet metal bending. Available in various tonnages and lengths.",
     "specs": {
-      "Max Cutting Thickness": "6mm (Mild Steel)",
-      "Max Cutting Length": "3200mm",
-      "Strokes per Minute": "12-20"
+      "Tonnage Range": "50 Ton - 800 Ton",
+      "Bending Length": "1500mm - 4000mm+",
+      "Control System": "Advanced CNC Controller"
     }
   },
   {
-    "id": "flw-1500",
-    "name": "FLW-1500 Handheld Welder",
-    "slug": "flw-1500-handheld-welder",
+    "id": "laser-welding-machine",
+    "name": "Laser Welding Machine",
+    "slug": "laser-welding-machine",
     "category": "fiber-laser-welders",
     "image": "https://images.unsplash.com/photo-1560263816-d704d83cce0f?q=80&w=800&auto=format&fit=crop",
-    "description": "1.5kW handheld fiber laser welder for precise and fast welding.",
+    "description": "Handheld fiber laser welder for fast, clean, and strong welds on a variety of metals. Features wobble head technology.",
     "specs": {
-      "Laser Power": "1.5kW",
-      "Welding Depth": "Up to 4mm",
-      "Cooling Method": "Water Cooled"
+      "Laser Power": "1kW / 1.5kW / 2kW / 3kW",
+      "Wavelength": "1070 nm",
+      "Working Time": "Continuous 24 Hours"
     }
   },
   {
-    "id": "lc-4020",
-    "name": "LC-4020 Fiber Laser",
-    "slug": "lc-4020-fiber-laser",
-    "category": "laser-cutting",
-    "image": "https://images.unsplash.com/photo-1611171736155-3535f5c224a8?q=80&w=800&auto=format&fit=crop",
-    "description": "Large format fiber laser for sheets up to 4m x 2m.",
-    "specs": {
-      "Power Range": "2kW - 12kW",
-      "Working Area": "4000mm x 2000mm"
-    }
-  },
-  {
-    "id": "pb-20040",
-    "name": "PB-20040 CNC Press Brake",
-    "slug": "pb-20040-cnc-press-brake",
+    "id": "nc-press-brake",
+    "name": "NC Press Brake Machine",
+    "slug": "nc-press-brake",
     "category": "cnc-press-brakes",
     "image": "https://images.unsplash.com/photo-1581092919534-992f3f17b534?q=80&w=800&auto=format&fit=crop",
-    "description": "Heavy-duty 200-ton press brake for demanding applications.",
+    "description": "Reliable and robust NC press brake for general-purpose bending tasks. A cost-effective solution for your workshop.",
     "specs": {
-      "Tonnage": "200 Ton",
-      "Bending Length": "4000mm"
+      "Tonnage Range": "40 Ton - 300 Ton",
+      "Table Length": "1600mm - 4000mm"
+    }
+  },
+  {
+    "id": "laser-plasma-consumables",
+    "name": "Laser & Plasma Consumables",
+    "slug": "laser-plasma-consumables",
+    "category": "consumables",
+    "image": "https://images.unsplash.com/photo-1612547036391-99a4b2a3c0a3?q=80&w=800&auto=format&fit=crop",
+    "description": "A complete range of high-quality consumables for your laser and plasma cutting machines, including nozzles, electrodes, and lenses.",
+    "specs": {
+      "Compatibility": "All major brands",
+      "Product Types": "Nozzles, Electrodes, Lenses, Shields, etc."
     }
   }
 ]

@@ -1,8 +1,8 @@
 [
   { "id": "laser-cutting", "name": "Laser Cutting Machines" },
+  { "id": "plasma-cutting", "name": "Plasma Cutting Machines" },
   { "id": "cnc-press-brakes", "name": "CNC Press Brakes" },
   { "id": "shearing-machines", "name": "Shearing Machines" },
   { "id": "fiber-laser-welders", "name": "Fiber Laser Welders" },
-  { "id": "hydraulic-presses", "name": "Hydraulic Presses" },
-  { "id": "special-purpose-machines", "name": "Special Purpose Machines" }
+  { "id": "consumables", "name": "Laser & Plasma Consumables" }
 ]

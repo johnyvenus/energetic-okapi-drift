@@ -29,7 +29,7 @@ const Contact = () => {
                   <MapPin className="h-6 w-6 text-primary mt-1" />
                   <div>
                     <h3 className="font-semibold">Our Address</h3>
-                    <p className="text-muted-foreground">Kila No. 17/1, Rakba 2, Main Sohna Road, Radha Soami Satsang Mor, Faridabad, Haryana 121004</p>
+                    <p className="text-muted-foreground">Kila No. 17/1, Rakba No. 2, Main Sohna Road, Near, Radha Soami Satsang Mor, N.I.T Faridabad, Haryana-121004</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
