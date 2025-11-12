@@ -4,7 +4,7 @@
     "name": "Single Table Fiber Laser",
     "slug": "single-table-fiber-laser",
     "category": "laser-cutting",
-    "image": "/assets/WhatsApp Image 2025-11-12 at 12.50.16 PM (2).jpeg",
+    "image": "https://images.unsplash.com/photo-1589992896382-18a4914a3874?q=80&w=800&auto=format&fit=crop",
     "description": "Efficient and precise single table fiber laser cutting machine, ideal for a wide range of metal fabrication applications.",
     "models": [
       { "name": "AOME 3015", "specs": { "Track Width": "1500mm", "Track Length": "3000mm" } },
@@ -17,7 +17,7 @@
     "name": "Gantry Flame/Plasma Cutter",
     "slug": "gantry-plasma-cutter",
     "category": "plasma-cutting",
-    "image": "/assets/WhatsApp Image 2025-11-12 at 12.50.15 PM.jpeg",
+    "image": "https://images.unsplash.com/photo-1617893929358-520764b93c3a?q=80&w=800&auto=format&fit=crop",
     "description": "Heavy-duty gantry-style cutting machine supporting both plasma and flame cutting heads for versatile operation.",
     "models": [
       { "name": "AOME 2506", "specs": { "Track Width": "2500mm", "Track Length": "6000mm" } },
@@ -29,7 +29,7 @@
     "name": "CNC Press Brake Machine",
     "slug": "cnc-press-brake",
     "category": "cnc-press-brakes",
-    "image": "/assets/WhatsApp Image 2025-11-12 at 12.50.17 PM (1).jpeg",
+    "image": "https://images.unsplash.com/photo-1629904039742-61185582a1b1?q=80&w=800&auto=format&fit=crop",
     "description": "High-precision CNC press brake for accurate and repeatable sheet metal bending. Available in various tonnages and lengths.",
     "specs": {
       "Tonnage Range": "50 Ton - 800 Ton",
@@ -42,7 +42,7 @@
     "name": "Laser Welding Machine",
     "slug": "laser-welding-machine",
     "category": "fiber-laser-welders",
-    "image": "/assets/WhatsApp Image 2025-11-12 at 12.50.16 PM.jpeg",
+    "image": "https://images.unsplash.com/photo-1560263816-d704d83cce0f?q=80&w=800&auto=format&fit=crop",
     "description": "Handheld fiber laser welder for fast, clean, and strong welds on a variety of metals. Features wobble head technology.",
     "specs": {
       "Laser Power": "1kW / 1.5kW / 2kW / 3kW",
@@ -55,7 +55,7 @@
     "name": "NC Press Brake Machine",
     "slug": "nc-press-brake",
     "category": "cnc-press-brakes",
-    "image": "/assets/WhatsApp Image 2025-11-12 at 12.50.17 PM (2).jpeg",
+    "image": "https://images.unsplash.com/photo-1581092919534-992f3f17b534?q=80&w=800&auto=format&fit=crop",
     "description": "Reliable and robust NC press brake for general-purpose bending tasks. A cost-effective solution for your workshop.",
     "specs": {
       "Tonnage Range": "40 Ton - 300 Ton",
