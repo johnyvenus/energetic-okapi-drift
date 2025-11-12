@@ -7,13 +7,13 @@ const categories = [
   {
     name: "Laser Cutting Machines",
     description: "High-precision cutting for various materials.",
-    image: "https://images.unsplash.com/photo-1589992896382-18a4914a3874?q=80&w=800&auto=format&fit=crop",
+    image: "/assets/WhatsApp Image 2025-11-12 at 12.50.17 PM.jpeg",
     link: "/products/laser-cutting",
   },
   {
     name: "CNC Press Brakes",
     description: "Accurate bending and forming solutions.",
-    image: "https://images.unsplash.com/photo-1629904039742-61185582a1b1?q=80&w=800&auto=format&fit=crop",
+    image: "/assets/WhatsApp Image 2025-11-12 at 12.50.17 PM (1).jpeg",
     link: "/products/cnc-press-brakes",
   },
   {
@@ -25,7 +25,7 @@ const categories = [
   {
     name: "Fiber Laser Welders",
     description: "Advanced welding technology for strong joints.",
-    image: "https://images.unsplash.com/photo-1560263816-d704d83cce0f?q=80&w=800&auto=format&fit=crop",
+    image: "/assets/WhatsApp Image 2025-11-12 at 12.50.16 PM.jpeg",
     link: "/products/fiber-laser-welders",
   },
 ];
