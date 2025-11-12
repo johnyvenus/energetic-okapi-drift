@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import { SalesEnquiryForm } from "@/components/SalesEnquiryForm";
 
 const SalesEnquiry = () => {
@@ -15,7 +16,9 @@ const SalesEnquiry = () => {
       <section className="py-16 md:py-24">
         <div className="container mx-auto px-4 md:px-6">
           <div className="max-w-3xl mx-auto">
+                          <Suspense fallback={<div>Loading...</div>}>
             <SalesEnquiryForm />
+                                          </Suspense>
           </div>
         </div>
       </section>
