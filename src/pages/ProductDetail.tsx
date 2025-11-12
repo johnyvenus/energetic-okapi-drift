@@ -25,12 +25,12 @@ const ProductDetail = () => {
   const hasModels = product.models && product.models.length > 0;
 
   const sampleImages = [
-    "https://images.unsplash.com/photo-1594213512289-8a6a3c65f75e?q=80&w=400&auto=format&fit=crop",
-    "https://images.unsplash.com/photo-1617893929358-520764b93c3a?q=80&w=400&auto=format&fit=crop",
-    "https://images.unsplash.com/photo-1589128793135-ce9240380a81?q=80&w=400&auto=format&fit=crop",
-    "https://images.unsplash.com/photo-1605205614933-b3643036e6e2?q=80&w=400&auto=format&fit=crop",
-    "https://images.unsplash.com/photo-1505672556833-a652e4b6a8b6?q=80&w=400&auto=format&fit=crop",
-    "https://images.unsplash.com/photo-1612547036391-99a4b2a3c0a3?q=80&w=400&auto=format&fit=crop",
+    "/uploads/WhatsApp-Image-2025-11-12-at-12.50.17-PM-(2).jpeg",
+    "/uploads/WhatsApp-Image-2025-11-12-at-12.50.17-PM-(1).jpeg",
+    "/uploads/WhatsApp-Image-2025-11-12-at-12.50.17-PM.jpeg",
+    "/uploads/WhatsApp-Image-2025-11-12-at-12.50.16-PM-(2).jpeg",
+    "/uploads/WhatsApp-Image-2025-11-12-at-12.50.16-PM-(1).jpeg",
+    "/uploads/WhatsApp-Image-2025-11-12-at-12.50.16-PM.jpeg",
   ];
 
   return (
@@ -124,7 +124,7 @@ const ProductDetail = () => {
             <div>
               <h2 className="text-3xl font-bold mb-6 text-center">Watch it in Action</h2>
               <div className="aspect-video max-w-4xl mx-auto bg-muted rounded-lg flex items-center justify-center relative overflow-hidden border cursor-pointer group">
-                <img src="https://images.unsplash.com/photo-1611171736155-3535f5c224a8?q=80&w=1024&auto=format&fit=crop" alt="Product video thumbnail" className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" />
+                <img src="/uploads/WhatsApp-Image-2025-11-12-at-12.50.17-PM.jpeg" alt="Product video thumbnail" className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" />
                 <div className="absolute inset-0 bg-black/40"></div>
                 <PlayCircle className="h-20 w-20 text-white/80 absolute z-10 transition-transform duration-300 group-hover:scale-110" />
                 <p className="absolute bottom-4 left-4 text-white font-semibold">Video coming soon</p>

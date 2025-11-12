@@ -1,12 +1,12 @@
 import PhotoGallery from "@/components/PhotoGallery";
 
 const facilityImages = [
-  { src: "https://images.unsplash.com/photo-1567789884554-0b844b597180?q=80&w=800&auto=format&fit=crop", alt: "Factory floor" },
-  { src: "https://images.unsplash.com/photo-1629904039742-61185582a1b1?q=80&w=800&auto=format&fit=crop", alt: "CNC machine in action" },
-  { src: "https://images.unsplash.com/photo-1581092446347-a56c5b5a1a8a?q=80&w=800&auto=format&fit=crop", alt: "Quality control station" },
-  { src: "https://images.unsplash.com/photo-1587293852726-70cdb122c294?q=80&w=800&auto=format&fit=crop", alt: "Warehouse and logistics" },
-  { src: "https://images.unsplash.com/photo-1518152006812-edab29b069ac?q=80&w=800&auto=format&fit=crop", alt: "R&D department" },
-  { src: "https://images.unsplash.com/photo-1557699242-52f77ab4a483?q=80&w=800&auto=format&fit=crop", alt: "Assembled machines" },
+  { src: "/uploads/WhatsApp-Image-2025-11-12-at-12.50.17-PM-(2).jpeg", alt: "AVI Enterprises Machine" },
+  { src: "/uploads/WhatsApp-Image-2025-11-12-at-12.50.17-PM-(1).jpeg", alt: "AVI Enterprises Machine" },
+  { src: "/uploads/WhatsApp-Image-2025-11-12-at-12.50.17-PM.jpeg", alt: "AVI Enterprises Facility" },
+  { src: "/uploads/WhatsApp-Image-2025-11-12-at-12.50.16-PM-(2).jpeg", alt: "Fiber Laser Machine" },
+  { src: "/uploads/WhatsApp-Image-2025-11-12-at-12.50.16-PM-(1).jpeg", alt: "Plasma Cutter" },
+  { src: "/uploads/WhatsApp-Image-2025-11-12-at-12.50.16-PM.jpeg", alt: "Press Brake Machine" },
 ];
 
 const About = () => {
@@ -41,7 +41,7 @@ const About = () => {
               </div>
             </div>
             <div>
-              <img src="https://images.unsplash.com/photo-1600880292210-85938a039959?q=80&w=1024&auto=format&fit=crop" alt="AVI Enterprises team" className="rounded-lg shadow-lg w-full" />
+              <img src="/uploads/WhatsApp-Image-2025-11-12-at-12.50.17-PM.jpeg" alt="AVI Enterprises team" className="rounded-lg shadow-lg w-full" />
             </div>
           </div>
         </div>

@@ -10,7 +10,7 @@ import { NavLink } from "react-router-dom";
 
 const slides = [
   {
-    image: "https://images.unsplash.com/photo-1589992896382-18a4914a3874?q=80&w=1920&auto=format&fit=crop",
+    image: "/uploads/WhatsApp-Image-2025-11-12-at-12.50.17-PM-(2).jpeg",
     title: "We make your cutting Easier, Better & Faster",
     description: "Specializing in Plasma Cutting, Fibre Laser, Sharing & Bending Machines.",
     buttons: [
@@ -19,7 +19,7 @@ const slides = [
     ],
   },
   {
-    image: "https://images.unsplash.com/photo-1611171736155-3535f5c224a8?q=80&w=1920&auto=format&fit=crop",
+    image: "/uploads/WhatsApp-Image-2025-11-12-at-12.50.17-PM-(1).jpeg",
     title: "Innovative Laser Cutting Solutions",
     description: "Experience unparalleled accuracy and speed with our state-of-the-art fiber laser machines.",
     buttons: [
@@ -28,7 +28,7 @@ const slides = [
     ],
   },
   {
-    image: "https://images.unsplash.com/photo-1629904039742-61185582a1b1?q=80&w=1920&auto=format&fit=crop",
+    image: "/uploads/WhatsApp-Image-2025-11-12-at-12.50.17-PM.jpeg",
     title: "Advanced CNC Press Brakes",
     description: "Achieve perfect bends every time. Our CNC press brakes offer superior control and durability.",
     buttons: [
