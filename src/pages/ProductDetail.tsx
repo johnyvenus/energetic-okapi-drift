@@ -3,7 +3,7 @@ import productsData from "@/content/products.json";
 import categoriesData from "@/content/categories.json";
 import NotFound from "./NotFound";
 import { Button } from "@/components/ui/button";
-import { ArrowLeft, PlayCircle } from "lucide-react";
+import { ArrowLeft, PlayCircle, CheckCircle } from "lucide-react";
 import {
   Table,
   TableBody,
@@ -70,6 +70,20 @@ const ProductDetail = () => {
                 <h2 className="text-3xl font-bold mb-4">Description</h2>
                 <p className="text-muted-foreground text-lg">{product.description}</p>
               </div>
+
+              {product.features && product.features.length > 0 && (
+                <div>
+                  <h2 className="text-3xl font-bold mb-4">Key Features</h2>
+                  <ul className="space-y-3">
+                    {product.features.map((feature, index) => (
+                      <li key={index} className="flex items-start gap-3">
+                        <CheckCircle className="h-6 w-6 text-primary mt-1 flex-shrink-0" />
+                        <span className="text-muted-foreground">{feature}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
 
               <div>
                 <h2 className="text-3xl font-bold mb-4">Specifications</h2>

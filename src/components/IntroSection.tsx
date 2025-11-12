@@ -11,7 +11,7 @@ const IntroSection = () => {
               For over nine years, AVI Enterprises has been a high-tech leader in manufacturing and distributing advanced welding and cutting equipment. Based on principles of advanced technology, best quality, and thoughtful service, we are a trusted global brand.
             </p>
             <p>
-              Our qualified team has extensive experience in fiber laser and CNC plasma technologies, developing intelligent, high-precision, and durable CNC products. We are dedicated to providing comprehensive equipment solutions for all our customers.
+              Our qualified team has extensive experience in fiber laser and CNC plasma technologies, developing intelligent, high-precision, and durable CNC products. We are dedicated to providing comprehensive equipment solutions that empower our customers to achieve superior results and operational excellence.
             </p>
           </div>
         </div>

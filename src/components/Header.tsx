@@ -24,9 +24,10 @@ const Header = () => {
 
   return (
     <header className="bg-background/80 sticky top-0 z-50 backdrop-blur-lg border-b">
-      <div className="container mx-auto flex items-center justify-between h-16 px-4 md:px-6">
+      <div className="container mx-auto flex items-center justify-between h-20 px-4 md:px-6">
         <NavLink to="/" className="flex items-center gap-2">
-          <span className="font-bold text-xl text-primary">AVI Enterprises</span>
+          <img src="/logo.png" alt="AVI Enterprises Logo" className="h-12 w-auto" />
+          <span className="font-bold text-xl text-primary sr-only">AVI Enterprises</span>
         </NavLink>
 
         {/* Desktop Navigation */}
@@ -55,7 +56,8 @@ const Header = () => {
             <SheetContent side="right">
               <div className="flex flex-col gap-6 p-6">
                 <NavLink to="/" className="flex items-center gap-2 mb-4" onClick={() => setIsMobileMenuOpen(false)}>
-                  <span className="font-bold text-xl text-primary">AVI Enterprises</span>
+                  <img src="/logo.png" alt="AVI Enterprises Logo" className="h-10 w-auto" />
+                  <span className="font-bold text-xl text-primary sr-only">AVI Enterprises</span>
                 </NavLink>
                 <nav className="flex flex-col gap-4">
                   {navLinks.map((link) => (

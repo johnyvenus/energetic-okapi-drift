@@ -6,6 +6,13 @@
     "category": "laser-cutting",
     "image": "/uploads/WhatsApp-Image-2025-11-12-at-12.50.16-PM-(2).jpeg",
     "description": "Efficient and precise single table fiber laser cutting machine, ideal for a wide range of metal fabrication applications.",
+    "features": [
+      "High-efficiency electro-optical conversion for lower power consumption.",
+      "Maintenance-free operation with a long-life fiber laser source.",
+      "Advanced cutting head with auto-focus for precision and speed.",
+      "Robust gantry structure for stability at high acceleration.",
+      "User-friendly CNC interface with extensive material library."
+    ],
     "models": [
       { "name": "AOME 3015", "specs": { "Track Width": "1500mm", "Track Length": "3000mm" } },
       { "name": "AOME 4015", "specs": { "Track Width": "1500mm", "Track Length": "4000mm" } },
@@ -19,6 +26,13 @@
     "category": "plasma-cutting",
     "image": "/uploads/WhatsApp-Image-2025-11-12-at-12.50.16-PM-(1).jpeg",
     "description": "Heavy-duty gantry-style cutting machine supporting both plasma and flame cutting heads for versatile operation.",
+    "features": [
+      "Dual-drive gantry for high stability and precision.",
+      "Supports both high-definition plasma and oxy-fuel flame cutting.",
+      "Automatic torch height control for consistent cut quality.",
+      "Industrial-grade CNC system for complex shape cutting.",
+      "Efficient nesting software to minimize material waste."
+    ],
     "models": [
       { "name": "AOME 2506", "specs": { "Track Width": "2500mm", "Track Length": "6000mm" } },
       { "name": "AOME 3508", "specs": { "Track Width": "3500mm", "Track Length": "8000mm" } }
@@ -31,6 +45,13 @@
     "category": "cnc-press-brakes",
     "image": "/uploads/WhatsApp-Image-2025-11-12-at-12.50.16-PM.jpeg",
     "description": "High-precision CNC press brake for accurate and repeatable sheet metal bending. Available in various tonnages and lengths.",
+    "features": [
+      "Synchronized hydraulic cylinders for high-precision bending.",
+      "Advanced CNC controller for multi-axis control and 2D/3D programming.",
+      "High-precision linear encoders on C-frames for accurate ram positioning.",
+      "Quick-release tool clamping system for fast setup.",
+      "Comprehensive safety features including light curtains and laser guards."
+    ],
     "specs": {
       "Tonnage Range": "50 Ton - 800 Ton",
       "Bending Length": "1500mm - 4000mm+",
@@ -44,6 +65,13 @@
     "category": "fiber-laser-welders",
     "image": "/uploads/WhatsApp-Image-2025-11-12-at-12.50.15-PM.jpeg",
     "description": "Handheld fiber laser welder for fast, clean, and strong welds on a variety of metals. Features wobble head technology.",
+    "features": [
+      "Wobble head technology for wider seams and improved weld quality.",
+      "High speed welding, 2-10 times faster than traditional methods.",
+      "Minimal heat affected zone, reducing deformation and discoloration.",
+      "Simple operation, easy to learn and use.",
+      "Integrated wire feeder for filler material applications."
+    ],
     "specs": {
       "Laser Power": "1kW / 1.5kW / 2kW / 3kW",
       "Wavelength": "1070 nm",
@@ -57,6 +85,13 @@
     "category": "cnc-press-brakes",
     "image": "/uploads/WhatsApp-Image-2025-11-12-at-12.50.16-PM.jpeg",
     "description": "Reliable and robust NC press brake for general-purpose bending tasks. A cost-effective solution for your workshop.",
+    "features": [
+      "Torsion bar synchronization for reliable bending accuracy.",
+      "Motorized backgauge for quick and easy adjustments.",
+      "Digital display for bend angle and backgauge position.",
+      "Hardened and ground standard tooling for durability.",
+      "Foot pedal operation with emergency stop."
+    ],
     "specs": {
       "Tonnage Range": "40 Ton - 300 Ton",
       "Table Length": "1600mm - 4000mm"
@@ -69,6 +104,13 @@
     "category": "consumables",
     "image": "https://images.unsplash.com/photo-1612547036391-99a4b2a3c0a3?q=80&w=800&auto=format&fit=crop",
     "description": "A complete range of high-quality consumables for your laser and plasma cutting machines, including nozzles, electrodes, and lenses.",
+    "features": [
+      "Manufactured to strict OEM specifications for optimal performance.",
+      "Wide compatibility with all major laser and plasma cutter brands.",
+      "High-purity materials for longer life and cleaner cuts.",
+      "Consistently available from stock for minimal downtime.",
+      "Includes nozzles, electrodes, lenses, shields, and more."
+    ],
     "specs": {
       "Compatibility": "All major brands",
       "Product Types": "Nozzles, Electrodes, Lenses, Shields, etc."

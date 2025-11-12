@@ -36,12 +36,35 @@ const About = () => {
                   We have a qualified team with big experience in fiber laser and CNC plasma and co-efficient technologies. AVI Enterprises equipment has been committed to the development and production of intelligent CNC products, such as fiber laser cutting machines and CNC plasma cutting machines with high precision, high intelligence, and safe and durable design.
                 </p>
                 <p>
+                  Our core philosophy is built on a foundation of robust engineering, continuous innovation, and a deep understanding of our clients' manufacturing challenges. We strive not just to sell machines, but to provide comprehensive solutions that enhance productivity, reduce operational costs, and ensure a competitive edge in the market.
+                </p>
+                <p>
                   Cooperation with a long and guaranteed system and perfect after-sales service has made us who we are today. We are dedicated to providing customers with laser cutting, welding machines, plasma cutting machines, Arc welding machines, MIG welding machines, and all cutting and welding equipment solutions.
                 </p>
               </div>
             </div>
             <div>
               <img src="/uploads/WhatsApp-Image-2025-11-12-at-12.50.17-PM.jpeg" alt="AVI Enterprises team" className="rounded-lg shadow-lg w-full" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Mission & Vision Section */}
+      <section className="py-16 md:py-24 bg-muted">
+        <div className="container mx-auto px-4 md:px-6">
+          <div className="grid md:grid-cols-2 gap-12">
+            <div>
+              <h3 className="text-2xl font-bold mb-3 text-primary">Our Mission</h3>
+              <p className="text-muted-foreground">
+                To empower manufacturers with technologically advanced, reliable, and cost-effective cutting and welding solutions, backed by exceptional service and support, to drive their growth and success.
+              </p>
+            </div>
+            <div>
+              <h3 className="text-2xl font-bold mb-3 text-primary">Our Vision</h3>
+              <p className="text-muted-foreground">
+                To be the most trusted and innovative leader in the industrial machinery sector, recognized globally for our commitment to quality, customer satisfaction, and technological excellence.
+              </p>
             </div>
           </div>
         </div>
