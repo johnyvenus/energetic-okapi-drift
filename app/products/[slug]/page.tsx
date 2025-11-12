@@ -1,7 +1,7 @@
-import { useParams, NavLink } from "react-router-dom";
+import { notFound } from "next/navigation";
+import Link from "next/link";
 import productsData from "@/content/products.json";
 import categoriesData from "@/content/categories.json";
-import NotFound from "./NotFound";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft, PlayCircle, CheckCircle } from "lucide-react";
 import {
@@ -13,15 +13,21 @@ import {
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import ContactTeaser from "@/components/ContactTeaser";
 
-const ProductDetail = () => {
-  const { slug } = useParams();
-  const product = productsData.find((p) => p.slug === slug);
-  const category = categoriesData.find((c) => c.id === product?.category);
+export async function generateStaticParams() {
+  return productsData.map((product) => ({
+    slug: product.slug,
+  }));
+}
 
+const ProductDetail = ({ params }: { params: { slug: string } }) => {
+  const { slug } = params;
+  const product = productsData.find((p) => p.slug === slug);
+  
   if (!product) {
-    return <NotFound />;
+    notFound();
   }
 
+  const category = categoriesData.find((c) => c.id === product?.category);
   const hasModels = product.models && product.models.length > 0;
 
   const sampleImages = [
@@ -40,10 +46,10 @@ const ProductDetail = () => {
         <div className="container mx-auto px-4 md:px-6">
           <div className="mb-4">
             <Button variant="ghost" asChild className="pl-0">
-              <NavLink to="/products">
+              <Link href="/products">
                 <ArrowLeft className="mr-2 h-4 w-4" />
                 Back to All Products
-              </NavLink>
+              </Link>
             </Button>
           </div>
           <p className="text-primary font-semibold">{category?.name}</p>
@@ -128,7 +134,7 @@ const ProductDetail = () => {
               </div>
 
               <Button size="lg" asChild className="w-full sm:w-auto">
-                <NavLink to={`/sales-enquiry?product=${encodeURIComponent(product.name)}`}>Request a Quote</NavLink>
+                <Link href={`/sales-enquiry?product=${encodeURIComponent(product.name)}`}>Request a Quote</Link>
               </Button>
             </div>
           </div>

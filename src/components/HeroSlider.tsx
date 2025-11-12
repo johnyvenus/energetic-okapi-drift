@@ -1,3 +1,5 @@
+"use client";
+
 import {
   Carousel,
   CarouselContent,
@@ -6,7 +8,7 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import { Button } from "@/components/ui/button";
-import { NavLink } from "react-router-dom";
+import Link from "next/link";
 
 const slides = [
   {
@@ -69,10 +71,10 @@ const HeroSlider = () => {
                         <Button
                           key={btnIndex}
                           size="lg"
-                          variant={button.variant === 'outline' ? 'outline-inverse' : 'default'}
+                          variant={button.variant === 'outline' ? 'outline' : 'default'}
                           asChild
                         >
-                          <NavLink to={button.link}>{button.text}</NavLink>
+                          <Link href={button.link}>{button.text}</Link>
                         </Button>
                       ))}
                     </div>

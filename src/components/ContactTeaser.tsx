@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { NavLink } from "react-router-dom";
+import Link from "next/link";
 
 const ContactTeaser = () => {
   return (
@@ -14,7 +14,7 @@ const ContactTeaser = () => {
           </p>
           <div className="mt-8">
             <Button size="lg" variant="secondary" asChild>
-              <NavLink to="/sales-enquiry">Request a Quote</NavLink>
+              <Link href="/sales-enquiry">Request a Quote</Link>
             </Button>
           </div>
         </div>

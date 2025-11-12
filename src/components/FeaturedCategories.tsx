@@ -1,7 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
-import { NavLink } from "react-router-dom";
+import Link from "next/link";
 
 const categories = [
   {
@@ -50,9 +50,9 @@ const FeaturedCategories = () => {
                 <CardTitle className="text-xl mb-2">{category.name}</CardTitle>
                 <p className="text-muted-foreground mb-4">{category.description}</p>
                 <Button variant="outline" asChild>
-                  <NavLink to={category.link}>
+                  <Link href={category.link}>
                     View More <ArrowRight className="ml-2 h-4 w-4" />
-                  </NavLink>
+                  </Link>
                 </Button>
               </CardContent>
             </Card>
@@ -60,7 +60,7 @@ const FeaturedCategories = () => {
         </div>
         <div className="text-center mt-12">
             <Button size="lg" asChild>
-                <NavLink to="/products">View All Products</NavLink>
+                <Link href="/products">View All Products</Link>
             </Button>
         </div>
       </div>

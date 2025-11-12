@@ -15,7 +15,7 @@ import {
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { showSuccess } from "@/utils/toast";
-import { useSearchParams } from "react-router-dom";
+import { useSearchParams } from "next/navigation";
 import { useEffect } from "react";
 
 const formSchema = z.object({
@@ -28,7 +28,7 @@ const formSchema = z.object({
 });
 
 export function SalesEnquiryForm() {
-  const [searchParams] = useSearchParams();
+  const searchParams = useSearchParams();
   const product = searchParams.get("product");
 
   const form = useForm<z.infer<typeof formSchema>>({

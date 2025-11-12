@@ -1,7 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
-import { NavLink } from "react-router-dom";
+import Link from "next/link";
 
 interface Product {
   id: string;
@@ -26,9 +26,9 @@ const ProductCard = ({ product }: ProductCardProps) => {
         <CardTitle className="text-xl mb-2">{product.name}</CardTitle>
         <p className="text-muted-foreground mb-4 flex-grow">{product.description}</p>
         <Button variant="outline" asChild className="mt-auto">
-          <NavLink to={`/products/${product.slug}`}>
+          <Link href={`/products/${product.slug}`}>
             View Details <ArrowRight className="ml-2 h-4 w-4" />
-          </NavLink>
+          </Link>
         </Button>
       </CardContent>
     </Card>
