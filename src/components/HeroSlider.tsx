@@ -16,8 +16,8 @@ const slides = [
     title: "We make your cutting Easier, Better & Faster",
     description: "Specializing in Plasma Cutting, Fibre Laser, Sharing & Bending Machines.",
     buttons: [
-      { text: "Get Quote", link: "/sales-enquiry", variant: "default" },
-      { text: "View Products", link: "/products", variant: "outline" },
+      { text: "Get Quote", link: "/sales-enquiry", variant: "default" as const },
+      { text: "View Products", link: "/products", variant: "outline" as const },
     ],
   },
   {
@@ -25,8 +25,8 @@ const slides = [
     title: "Innovative Laser Cutting Solutions",
     description: "Experience unparalleled accuracy and speed with our state-of-the-art fiber laser machines.",
     buttons: [
-      { text: "Explore Laser Cutters", link: "/products", variant: "default" },
-      { text: "Contact Sales", link: "/contact", variant: "outline" },
+      { text: "Explore Laser Cutters", link: "/products", variant: "default" as const },
+      { text: "Contact Sales", link: "/contact", variant: "outline" as const },
     ],
   },
   {
@@ -34,8 +34,8 @@ const slides = [
     title: "Advanced CNC Press Brakes",
     description: "Achieve perfect bends every time. Our CNC press brakes offer superior control and durability.",
     buttons: [
-      { text: "View Press Brakes", link: "/products", variant: "default" },
-      { text: "Request a Demo", link: "/sales-enquiry", variant: "outline" },
+      { text: "View Press Brakes", link: "/products", variant: "default" as const },
+      { text: "Request a Demo", link: "/sales-enquiry", variant: "outline" as const },
     ],
   },
 ];
@@ -67,11 +67,12 @@ const HeroSlider = () => {
                       {slide.description}
                     </p>
                     <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
-                      {slides[0].buttons.map((button, btnIndex) => (
+                      {slide.buttons.map((button, btnIndex) => (
                         <Button
                           key={btnIndex}
                           size="lg"
-                          variant={button.variant === 'outline' ? 'outline' : 'default'}
+                          variant={button.variant}
+                          className={button.variant === 'outline' ? 'border-white/80 text-white hover:bg-white hover:text-primary' : ''}
                           asChild
                         >
                           <Link href={button.link}>{button.text}</Link>
